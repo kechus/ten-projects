@@ -1,0 +1,9 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hidden{
+    display: none;
+}
