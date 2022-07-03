@@ -1,0 +1,46 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#announcement{
+    font-size: 7rem;
+    text-align: center;
+}
+
+.bg-image{
+    background-image: url('./dias-perros.png');
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-cont{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number{
+    font-size: 5rem;
+}
+
+.text{
+    font-size: 2rem;
+}
+
+.hidden{
+    display: none;
+}
