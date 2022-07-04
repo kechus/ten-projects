@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+		<title>Trivia trainer</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card category-select" id="select">
+				<p id="title">Select a category</p>
+
+				<select
+					name="category"
+					id="category"
+					onchange="categoryChanged(this)"
+					required
+				>
+					<option value="-1">All categories</option>
+				</select>
+				<input
+					type="button"
+					value="Start"
+					id="start"
+					class="bottom-button"
+					onclick="startGame()"
+				/>
+			</div>
+
+			<div class="card hidden" id="main-game">
+				<div class="questionary">
+					<p id="question"></p>
+
+					<div class="answer">
+						<input
+							type="radio"
+							name="answers"
+							id="answerA"
+							value="a"
+							required
+						/>
+						<label for="answerA" id="labelAnswerA"></label>
+					</div>
+
+					<div class="answer">
+						<input type="radio" name="answers" id="answerB" value="b" />
+						<label for="answerB" id="labelAnswerB"></label>
+					</div>
+
+					<div class="answer">
+						<input type="radio" name="answers" id="answerC" value="c" />
+						<label for="answerC" id="labelAnswerC"></label>
+					</div>
+
+					<div class="answer">
+						<input type="radio" name="answers" id="answerD" value="d" />
+						<label for="answerD" id="labelAnswerD"></label>
+					</div>
+				</div>
+
+				<input
+					type="button"
+					value="Next"
+					id="next"
+					class="bottom-button"
+					onclick="next()"
+				/>
+			</div>
+
+			<div class="hidden card history" id="history-card">
+				<ul id="history"></ul>
+				<input
+					type="button"
+					value="Play again"
+					id="again"
+					class="bottom-button normal-button"
+					onclick="window.location.reload(true)"
+				/>
+			</div>
+
+			<div class="hidden" id="toast"></div>
+		</div>
+	</body>
+</html>
