@@ -1,0 +1,126 @@
+body{
+    color: white;
+    background-color: #BBB8B2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #888072;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+#filter{
+    border: none;
+    background-color: #999286;
+}
+
+.circular-image{
+    width: 45%;
+    clip-path: circle();
+}
+
+.choose{
+    display: flex;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.favorites{
+    overflow-x: auto;
+    background-color: #DE9151;
+    display: flex;
+    flex-direction: column;
+}
+
+.story{
+    min-width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.recipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipes:last-child{
+    margin-bottom: 5vh;
+}
+
+.recipe{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    background-color: #999286;
+}
+
+.recipe-image{
+    height: 100%;
+    width: 100%;
+}
+
+.recipe-image:hover{
+    cursor: pointer;
+}
+
+.recipe-footer{
+    width: 90%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toast {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #393e46;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 1rem;
+    padding: 2vh 3vw 2vh 3vw;
+    position:fixed;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.ingredients-and-measurements{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#instructions{
+    height: 40%;
+    overflow-y: scroll;
+}
+
+.cora{
+    background-image: url('heart.png'); 
+    display: block
+}
+
+.cora:hover{
+    cursor: pointer;
+}

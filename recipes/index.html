@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Recipes</title>
+</head>
+
+<body>
+    <div id="main" style="display: flex; justify-content: center; height: 100%;">
+        <div class="container">
+
+            <div class="header">
+                Recipe Finder
+            </div>
+            <div class="header">
+                <input type="text" name="filter" id="filter" placeholder="You ingredient here">
+                <input type="button" value="Search" onclick="search()">
+            </div>
+
+            <div id='favorites' class="favorites hidden">
+                <div id="choose" class="choose">
+                    <!-- <div class="story">
+                        <img src="https://www.themealdb.com/images/media/meals/n7qnkb1630444129.jpg"
+                            class="circular-image">
+                        <span>Ham</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div id="recipes" class="recipes">
+                <!-- <div class="recipe">
+                    <img src="https://www.themealdb.com/images/media/meals/n7qnkb1630444129.jpg" class="recipe-image">
+                    <div class="recipe-footer">
+                        <span>Chivito uruguayo apoco no carnal juasjasu ajua jijija amigo del alama</span>
+                        <img src="heart.png" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="toast" class="toast hidden">
+            <div id="instructions"></div>
+    
+            <div class="ingredients-and-measurements">
+                
+                <div class="list-container">
+                    <span>Ingredients</span>
+                    <ul id='ingredients' class="ingredients">
+                    </ul>    
+                </div>
+                
+                <div class="list-container">                    
+                    <span>Measurements</span>
+                    <ul id="measurements" class="measurements">
+                    </ul>
+                </div>
+    
+            </div>
+            <input type="button" value="Cerrar" onclick="hideToast()">
+        </div>
+    </div>
+
+
+   
+</body>
+
+</html>
