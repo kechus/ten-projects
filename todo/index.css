@@ -1,0 +1,100 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title{
+    font-size: 5rem;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-container{
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+#first{
+    box-sizing: border-box;
+    width: 40vw;
+    height: 50px;
+    padding-left: 20px;
+}
+
+#first::placeholder{
+    padding-left: 20px;
+}
+
+.todo{
+    box-sizing: border-box;
+    color: black;
+    width: 40vw;
+    min-height: 50px;
+    background-color: white;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+i{
+    opacity: .7;
+}
+
+i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+input[type='checkbox']{
+    height: 100%;
+}
+
+input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+}
+
+.left{
+    display: flex;
+}
+
+.footer{
+    color: black;
+    background-color: white;
+    display: flex;
+    width: 40vw;
+    height: 30px;
+    justify-content:space-around;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.chosen{
+    border: 1px solid;
+}
+
+.filters{
+    justify-self: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

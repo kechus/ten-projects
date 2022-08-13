@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/150b79dc15.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p id="title">todos</p>
+        <div class="todos-container">
+            <input type="text" name="first" id="first" placeholder="que hacer...">
+            
+           <div id="todos">
+
+           </div>
+
+            <div id="footer" class="footer hidden">
+                <div id="remaining" class="remain">
+                    queda 1
+                </div>
+
+                <div class="filters">
+                    <button id="toditos" class="chosen" onclick="toditos()">todos</button>
+                    <button id="activos" onclick="active()">activos</button>
+                    <button id="completed" onclick="completed()">completados</button>
+                </div>
+
+                <div class="clear">
+                    <a href="#" onclick="clean()" >limpiar completados</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
